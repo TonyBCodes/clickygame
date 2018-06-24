@@ -18,7 +18,7 @@ class App extends Component {
         this.drawgrid();
     }
 
-    array_index = ()=>{
+    random_index = () => {
         const qarray = new Array(12);
         let j = 0;
         const min = 0;
@@ -48,56 +48,67 @@ class App extends Component {
     drawgrid = () => {
         //console.log(this.state.cat_arr);
         //console.log("Drawgrid");
+        //<img onClick={this.addscore} className="pic" alt="Cat Pic" src={this.state.cat_arr[this.state.index].image} />
 
-        const new_pos = this.array_index();
+        const new_pos = this.random_index();
+        let grid = '<div id="board" className="card-body">';
         for (var i = 0; i < new_pos.length; i++) {
             this.setState({ index: new_pos[i] });
+            grid = grid + '<li><img onClick={this.addscore} className="pic" alt="Cat Pic{this.state.cat_arr[this.state.index].id}" src={this.state.cat_arr[this.state.index].image} /></li>'
         }
+        grid = grid + '</div>';
+        console.log(grid);
+        //let grid_node = document.createTextNode(grid);
+        let board = document.getElementById("board");
+        board.insertAdjacentHTML("beforeend", grid);
+
+        //console.log(board);
+        //$("#board").append(grid);
     }
-
+        
     addscore= () => {
-        this.setState({ score: this.state.score + 1 });
-        this.setState({ catclicked: true });
-    };
-
-
-
-
+                        this.setState({ score: this.state.score + 1 });
+                    this.setState({catclicked: true });
+                };
+            
+            
+            
+            
     render() {
         return (
             <div>
-                <div>
-                    <h1>Home Page</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque velit, lobortis ut magna
-                        varius, blandit rhoncus sem. Morbi lacinia nisi ac dui fermentum, sed luctus urna tincidunt.
-                        Etiam ut feugiat ex. Cras non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna
-                        imperdiet ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras rutrum ligula
-                        in tincidunt commodo. Morbi sit amet mollis orci, in tristique ex. Donec nec ornare elit.
-                        Donec blandit est sed risus feugiat porttitor. Vestibulum molestie hendrerit massa non
-                        consequat. Vestibulum vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-                        fames ac ante ipsum primis in faucibus.
+                        <div>
+                            <h1>Home Page</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque velit, lobortis ut magna
+                                varius, blandit rhoncus sem. Morbi lacinia nisi ac dui fermentum, sed luctus urna tincidunt.
+                                Etiam ut feugiat ex. Cras non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna
+                                imperdiet ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras rutrum ligula
+                                in tincidunt commodo. Morbi sit amet mollis orci, in tristique ex. Donec nec ornare elit.
+                                Donec blandit est sed risus feugiat porttitor. Vestibulum molestie hendrerit massa non
+                                consequat. Vestibulum vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
+                                fames ac ante ipsum primis in faucibus.
                     </p>
-                    <div className="card text-center">
+                            <div className="card text-center">
 
-                        <div id="board" className="card-body">
+                                <div id="board" className="card-body">
 
-                            <img onClick={this.addscore} className="pic" alt="Cat Pic" src={this.state.cat_arr[this.state.index].image} />
-                            
-                         </div>
 
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div className="contstyle">
+                            <p>{this.state.score}</p>
+                        </div>
                     </div>
-                </div>
-                <div className="contstyle">
-                    <p>{this.state.score}</p>
-                </div>
-            </div>
-        );
-    }
-}
-
-export default App;
-
+                    );
+                }
+            }
+            
+            export default App;
+            
 //<div className="card-header">
 //    Featured
 //                        </div>
@@ -108,3 +119,4 @@ export default App;
 //    2 days ago
 //</div>
 //<img onClick={this.addscore} className="pic" alt="Cat Pic" src="https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&h=350" />
+//<img onClick={this.addscore} className="pic" alt="Cat Pic" src={this.state.cat_arr[this.state.index].image} />
