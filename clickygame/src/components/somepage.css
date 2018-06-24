@@ -1,0 +1,19 @@
+﻿body {
+    margin:25px
+}
+
+.card {
+    border:10px;
+    border-color:red;
+    background-color:forestgreen;
+    width:auto;
+    height:auto;
+    text-align:center;
+    vertical-align:middle
+
+}
+
+img {
+    width:200px;
+    height:auto
+}
