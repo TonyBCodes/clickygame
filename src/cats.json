@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "image": "https://images.pexels.com/photos/20787/pexels-photo.jpg",
+    "clicked": false
+  },
+  {
+    "id": 2,
+    "image": "https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 3,
+    "image": "https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 4,
+    "image": "https://images.pexels.com/photos/127028/pexels-photo-127028.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 5,
+    "image": "https://images.pexels.com/photos/65006/pexels-photo-65006.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 6,
+    "image": "https://images.pexels.com/photos/236606/pexels-photo-236606.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 7,
+    "image": "https://images.pexels.com/photos/126407/pexels-photo-126407.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 8,
+    "image": "https://images.pexels.com/photos/326875/pexels-photo-326875.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 9,
+    "image": "https://images.pexels.com/photos/774731/pexels-photo-774731.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 10,
+    "image": "https://images.pexels.com/photos/315582/pexels-photo-315582.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 11,
+    "image": "https://images.pexels.com/photos/54632/cat-animal-eyes-grey-54632.jpeg",
+    "clicked": false
+  },
+  {
+    "id": 12,
+    "image": "https://images.pexels.com/photos/7517/animal-sitting-animals-inside.jpg",
+    "clicked": false
+  }
+]
