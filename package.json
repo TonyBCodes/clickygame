@@ -17,6 +17,10 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
+  "main":"index.js",
+  "repository": "https://github.com/TonyBCodes/clickygame",
+  "author":"Tony",
+  "license":"MIT",
   "devDependencies": {
     "gh-pages": "^1.2.0"
   }
