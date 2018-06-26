@@ -27,13 +27,3 @@
   to { transform: rotate(360deg); }
 }
 
-.card{
-    width:200px;
-    height:auto;
-    display:inline;
-}
-
-.pic{
-    width:160px;
-    height:auto;
-}
