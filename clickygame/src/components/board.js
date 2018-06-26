@@ -3,6 +3,7 @@
 
 const Board = (props) => (
     <div>
+        {props.children}
     </div>
     );
 

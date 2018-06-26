@@ -6,15 +6,19 @@ import Card from "./card";
 
 const Wrapper = (props) => (
 
-    <div class="container">
+    <div className="container">
         <Navbar
             score={props.score}
         />
 
         <Board>
-            {props.cats_arr.map((cat) => (
+            {props.cats_arr.sort(() => 0.5 - Math.random()).map((cat) => (
                 <Card
                     image={cat.image}
+                    id={cat.id}
+                    key={cat.id}
+                    clicked={cat.clicked}
+                    handleInput={props.handleInput}
                 />))}
         </Board>
     </div>
